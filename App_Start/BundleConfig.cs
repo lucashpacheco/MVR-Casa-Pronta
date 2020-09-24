@@ -17,7 +17,7 @@ namespace MVR_Casa_Pronta
             // Use a versão em desenvolvimento do Modernizr para desenvolver e aprender. Em seguida, quando estiver
             // pronto para a produção, utilize a ferramenta de build em https://modernizr.com para escolher somente os testes que precisa.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr.custom.70736.js",
+                        
                         "~/Scripts/modernizr-*"));
             
             bundles.Add(new ScriptBundle("~/bundles/gama").Include(
@@ -25,6 +25,7 @@ namespace MVR_Casa_Pronta
                         "~/Scripts/jquery.history.js",
                         "~/Scripts/jquery.masonry.min.js",
                         "~/Scripts/jquerypp.custom.js",
+                        "~/Scripts/modernizr.custom.70736.js",
                         "~/Scripts/js-url.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(

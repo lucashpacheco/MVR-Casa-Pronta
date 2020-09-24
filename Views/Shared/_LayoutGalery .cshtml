@@ -1,19 +1,19 @@
-﻿<!DOCTYPE html>
+﻿
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/modernizr.custom.70736.js"></script>
-    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <script src="~/Scripts/modernizr.custom.70736.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="~/Content/noJS.css" /></noscript>
     <title>@ViewBag.Title - MVR Casa Pronta</title>
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/gama")
+    @*@Styles.Render("~/Content/gama")*@
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/css")
-    @Scripts.Render("~/bundles/gama")
+    @Scripts.Render("~/Content/css")
+    @*@Scripts.Render("~/bundles/gama")*@
     
 </head>
 <body>
@@ -43,25 +43,13 @@
 
             @RenderBody()
 
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - MVR Casa Pronta</p>
-            </footer>
         </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MVR Casa Pronta</p>
+        </footer>
     </div>
 
 
-    @Scripts.Render("~/Scripts/gamma")
-    @Scripts.Render("~/Scripts/jquery.history.js")
-    @Scripts.Render("~/Scripts/jquery.masonry.min.js")
-    @Scripts.Render("~/Scripts/jquerypp.custom")
-    @Scripts.Render("~/Scripts/js-url.js")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/blundles/style.css") 
-    @Scripts.Render("~/blundles/demo.css")
-    @Scripts.Render("~/blundles/noJs.css")
-    @Scripts.Render("~/js/modernizr.custom.70736.js")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

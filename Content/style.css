@@ -1,17 +1,6 @@
 @import url('demo.css');
 
-/* Entypo Icon Font */
-@font-face {
-  font-family: 'entypo-selected';
-  src: url("../font/entypo-selected.eot");
-  src: 
-	  url("../font/entypo-selected.eot?#iefix") format('embedded-opentype'), 
-	  url("../font/entypo-selected.woff") format('woff'), 
-	  url("../font/entypo-selected.ttf") format('truetype'), 
-	  url("../font/entypo-selected.svg#entypo-selected") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 /* Gamma Gallery Style */
 
@@ -100,9 +89,9 @@
 .gamma-description h3 {
 	width: 100%;
 	padding: 0 20px;
-	font-weight: 400;
+	fonts-weight: 400;
 	text-transform: uppercase;
-	font-size: 16px;
+	fonts-size: 16px;
 	letter-spacing: 2px;
 }
 
@@ -120,7 +109,7 @@
 	display: block;
 	width: 30px;
 	height: 30px;
-	font-size: 14px;
+	fonts-size: 14px;
 	margin-left: 5px;
 	cursor: pointer;
 	border: none;
@@ -129,9 +118,9 @@
 
 .gamma-buttons button:before,
 .gamma-nav span:before {
-	font-family: 'entypo-selected';
-	font-style: normal;
-	font-weight: normal;
+	fonts-family: 'entypo-selected';
+	fonts-style: normal;
+	fonts-weight: normal;
 	speak: none;
 	display: block;
 	text-align: center;
@@ -203,7 +192,7 @@ button.gamma-btn-sspause:before {
 }
 
 .gamma-single-view .gamma-description h3 {
-	font-size: 15px;
+	fonts-size: 15px;
 	padding: 5px 0;
 	color: #fff;
 }
@@ -233,7 +222,7 @@ button.gamma-btn-sspause:before {
 .gamma-nav span:before {
 	color: #fff;
 	opacity: 0.7;
-	font-size: 40px;
+	fonts-size: 40px;
 }
 
 .gamma-nav span:hover:before {
@@ -264,11 +253,11 @@ button.gamma-btn-sspause:before {
 /* Loaders */
 
 .gamma-loading {
-	background: transparent url(../images/loader_light.gif) no-repeat center center;
+	background: transparent url(C:/Users/WorkStationW10/Documents/MVR-Casa-Pronta/MVR-Casa-Pronta/Views/Projects/Images/loader_light.gif) no-repeat center center;
 }
 
 .gamma-single-view.gamma-loading {
-	background: transparent url(../images/loader_dark.gif) no-repeat center center;
+	background: transparent url(C:/Users/WorkStationW10/Documents/MVR-Casa-Pronta/MVR-Casa-Pronta/Views/Projects/Images/loader_dark.gif) no-repeat center center;
 }
 
 
@@ -282,7 +271,6 @@ button.gamma-btn-sspause:before {
 .gamma-description h3 {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
-	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
@@ -298,7 +286,7 @@ button.gamma-btn-sspause:before {
 	}
 
 	.gamma-description h3 {
-		font-size: 14px;
+		fonts-size: 14px;
 		padding: 0 5px;
 	}
 

@@ -136,11 +136,15 @@
     <Content Include="Content\noJS.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\entypo-selected.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\entypo-selected.eot" />
+    <Content Include="fonts\entypo-selected.ttf" />
+    <Content Include="fonts\entypo-selected.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\gamma.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -160,6 +164,8 @@
     <Content Include="Scripts\modernizr.custom.70736.js" />
     <Content Include="Views\Projects\Images\3.jpg" />
     <Content Include="Views\Projects\Images\large\3.jpg" />
+    <Content Include="Views\Projects\Images\loader_dark.gif" />
+    <Content Include="Views\Projects\Images\loader_light.gif" />
     <Content Include="Views\Projects\Images\medium\3.jpg" />
     <Content Include="Views\Projects\Images\small\3.jpg" />
     <Content Include="Views\Projects\Images\xlarge\3.jpg" />
