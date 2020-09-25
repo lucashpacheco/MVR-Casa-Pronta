@@ -25,13 +25,13 @@ namespace MVR_Casa_Pronta
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      //"~/Content/galeria.css",
+                      "~/Content/galeria.css",
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/lightbox").Include(
-                      "~/dist/css/lightbox.css"));
+                      "~/Content/lightbox.css"));
             bundles.Add(new ScriptBundle("~/bundles/lightbox").Include(
-                      "~/dist/js/lightbox-plus-jquery.js"));
+                      "~/Scripts/lightbox.js"));
 
             
         }
