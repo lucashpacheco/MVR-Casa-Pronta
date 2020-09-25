@@ -132,14 +132,22 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\demo.css" />
-    <Content Include="Content\noJS.css" />
-    <Content Include="Content\style.css" />
+    <Content Include="Content\fancybox\blank.gif" />
+    <Content Include="Content\fancybox\fancybox_buttons.png" />
+    <Content Include="Content\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\fancybox\fancybox_loading.gif" />
+    <Content Include="Content\fancybox\fancybox_overlay.png" />
+    <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\galeria.css" />
+    <Content Include="Content\jquery.fancybox-buttons.css" />
+    <Content Include="Content\jquery.fancybox-thumbs.css" />
+    <Content Include="Content\jquery.fancybox.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\entypo-selected.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\entypo-selected.eot" />
@@ -152,8 +160,14 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\jquery.fancybox-media.js" />
+    <Content Include="Scripts\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\jquery.fancybox.js" />
+    <Content Include="Scripts\jquery.fancybox.pack.js" />
     <Content Include="Scripts\jquery.history.js" />
     <Content Include="Scripts\jquery.masonry.min.js" />
+    <Content Include="Scripts\jquery.mousewheel-3.0.6.pack.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -162,16 +176,8 @@
     <Content Include="Scripts\js-url.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\modernizr.custom.70736.js" />
-    <Content Include="Views\Projects\Images\3.jpg" />
-    <Content Include="Views\Projects\Images\large\3.jpg" />
-    <Content Include="Views\Projects\Images\loader_dark.gif" />
-    <Content Include="Views\Projects\Images\loader_light.gif" />
-    <Content Include="Views\Projects\Images\medium\3.jpg" />
-    <Content Include="Views\Projects\Images\small\3.jpg" />
-    <Content Include="Views\Projects\Images\xlarge\3.jpg" />
-    <Content Include="Views\Projects\Images\xsmall\3.jpg" />
-    <Content Include="Views\Projects\Images\xxlarge\3.jpg" />
-    <Content Include="Views\Projects\Images\xxxlarge\3.jpg" />
+    <Content Include="Views\Projects\big_image_1.jpg" />
+    <Content Include="Views\Projects\small_image_1.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -186,13 +192,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutGallery.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
-    <Content Include="Views\Shared\_LayoutGalery .cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
