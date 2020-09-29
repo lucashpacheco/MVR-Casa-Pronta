@@ -1,72 +1,66 @@
-﻿using Microsoft.Ajax.Utilities;
+﻿using MVR_Casa_Pronta.Models;
 using MVR_Casa_Pronta.Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Web;
-using System.Web.UI.WebControls;
-
 
 namespace MVR_Casa_Pronta.Service
 {
 
     public interface IImageSeparator
     {
-        object ImageSeparatorMethod();
+        List<ImagesModel> ImageSeparatorMethod();
     }
 
     public interface IGaleryCreator
     {
-        object GaleryCreatorMethod();
-        //object ImageSeparatorMethod();
+        string GaleryCreatorMethod();
     }
 
-    public class ImageSeparator //: IImageSeparator
+    public class ImageSeparator : IImageSeparator
     {
-        //[Dependency]
-        public IImagesRepository imagesRepository { get; set; }
+        private readonly IImagesRepository _imagesRepository;
 
-        object imageObj = "";
-        object divImageObj = "";
-        public object ImageSeparatorMethod()
+        public ImageSeparator(IImagesRepository imagesRepository)
         {
-            var images = imagesRepository.GetAllImages();
-            object imageFinal = "";
+            _imagesRepository = imagesRepository;
+        }
 
+        public List<ImagesModel> ImageSeparatorMethod()
+        {
+            var images = _imagesRepository.GetAllImages();
+            var listImages = new List<ImagesModel>();
 
-            foreach (var imageElement in images)
-            {
-
-                Console.WriteLine(imageElement.IMG_NAME);
-                Console.WriteLine(imageElement.IMG_DESCRIPTION);
-                Console.WriteLine(imageElement.IMG_ID);
-                Console.WriteLine(imageElement.IMG_BYTE);
-
-                imageFinal = imageElement;
-                return imageFinal;
-            }
-
-            return imageObj = imageFinal;
-
+            return images;
         }
 
         public class GaleryCreator : IGaleryCreator
         {
-            public IImageSeparator imageSeparator { get; set; }
+            private readonly IImageSeparator _imageSeparator;
 
-            object imageDiv = imageSeparator.ImageSeparatorMethod();
-            
-            //object imageDiv = imageSeparator.ImageSeparatorMethod();
-
-
-            public object GaleryCreatorMethod()
+            public GaleryCreator(IImageSeparator imageSeparator)
             {
-                var div = "";
-                return null;//divImageObj = div;
+                _imageSeparator = imageSeparator;
+            }
+
+            public string GaleryCreatorMethod()
+            {
+                var images = _imageSeparator.ImageSeparatorMethod();
+
+                var div = MountDivsPerImage(images);
+
+                return div;
+            }
+
+            private string MountDivsPerImage(List<ImagesModel> images)
+            {
+                var div = $"";
+                foreach (var image in images)
+                {
+                    //TODO: MONTA A DIV
+                }
+
+                return div;
             }
         }
-
-        //return divImageObj;
     }
 }

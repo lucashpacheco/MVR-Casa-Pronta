@@ -84,3 +84,10 @@ C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\obj\Debug\MVR-
 C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\obj\Debug\MVR-Casa-Pronta.csproj.CopyComplete
 C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\obj\Debug\MVR Casa Pronta.dll
 C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\obj\Debug\MVR Casa Pronta.pdb
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\Unity.Abstractions.dll
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\Unity.Container.dll
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\Unity.Abstractions.pdb
+C:\Users\WorkStationW10\Documents\MVR-Casa-Pronta\MVR-Casa-Pronta\bin\Unity.Container.pdb

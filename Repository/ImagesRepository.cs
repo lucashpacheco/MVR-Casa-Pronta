@@ -14,26 +14,13 @@ namespace MVR_Casa_Pronta.Repository
     }
     public class ImagesRepository : IImagesRepository
     {
-        
         public List<ImagesModel> GetAllImages()
         {
-
             var db = new PetaPoco.Database("System.Data.SqlClient");
             var allImages = db.Fetch<ImagesModel>("SELECT * FROM Images");
 
-
-
             return allImages;
         }
-        //public static object GetAllImages()
-        //{
-
-        //    var db = new PetaPoco.Database("System.Data.SqlClient");
-        //    var allImages = db.Query<ImagesModel>("SELECT * FROM Images");
- 
-        //    return allImages;
-        //}
-
     }
      
 }
