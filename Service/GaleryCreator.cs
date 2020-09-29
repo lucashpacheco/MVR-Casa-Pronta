@@ -22,7 +22,7 @@ namespace MVR_Casa_Pronta.Service
         //object ImageSeparatorMethod();
     }
 
-    public class ImageSeparator : IImageSeparator
+    public class ImageSeparator //: IImageSeparator
     {
         //[Dependency]
         public IImagesRepository imagesRepository { get; set; }
@@ -53,9 +53,18 @@ namespace MVR_Casa_Pronta.Service
 
         public class GaleryCreator : IGaleryCreator
         {
-           
+            public IImageSeparator imageSeparator { get; set; }
 
+            object imageDiv = imageSeparator.ImageSeparatorMethod();
             
+            //object imageDiv = imageSeparator.ImageSeparatorMethod();
+
+
+            public object GaleryCreatorMethod()
+            {
+                var div = "";
+                return null;//divImageObj = div;
+            }
         }
 
         //return divImageObj;
