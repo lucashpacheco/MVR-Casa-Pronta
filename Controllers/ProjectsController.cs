@@ -4,6 +4,7 @@ using System.EnterpriseServices;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MVR_Casa_Pronta.Interfaces;
 using MVR_Casa_Pronta.Repository;
 using MVR_Casa_Pronta.Service;
 using Unity;

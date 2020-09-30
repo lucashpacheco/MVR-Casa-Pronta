@@ -1,21 +1,11 @@
-﻿using MVR_Casa_Pronta.Models;
+﻿using MVR_Casa_Pronta.Interfaces;
+using MVR_Casa_Pronta.Models;
 using MVR_Casa_Pronta.Repository;
 using System;
 using System.Collections.Generic;
 
 namespace MVR_Casa_Pronta.Service
 {
-
-    public interface IImageSeparator
-    {
-        List<ImagesModel> ImageSeparatorMethod();
-    }
-
-    public interface IGaleryCreator
-    {
-        string GaleryCreatorMethod();
-    }
-
     public class ImageSeparator : IImageSeparator
     {
         private readonly IImagesRepository _imagesRepository;
@@ -42,25 +32,39 @@ namespace MVR_Casa_Pronta.Service
                 _imageSeparator = imageSeparator;
             }
 
-            public string GaleryCreatorMethod()
+            public object GaleryCreatorMethod()
             {
                 var images = _imageSeparator.ImageSeparatorMethod();
+                
+                object imageX = "";
 
-                var div = MountDivsPerImage(images);
+                //var div = MountDivsPerImage(images);
 
-                return div;
-            }
-
-            private string MountDivsPerImage(List<ImagesModel> images)
-            {
-                var div = $"";
                 foreach (var image in images)
                 {
-                    //TODO: MONTA A DIV
+                        imageX = image;
+
+                    return imageX;
                 }
 
-                return div;
+                object div = "";
+
+                return images;
             }
+
+            //private object MountDivsPerImage(List<ImagesModel> images)
+            //{
+            //    object imageX = "";
+            //    var div = $"";
+            //    foreach (var image in images)
+            //    {
+            //        imageX = image;
+
+            //        return imageX;
+            //    }
+
+            //    return div;
+            //}
         }
     }
 }
