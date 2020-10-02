@@ -7,8 +7,7 @@ using System.Web.Mvc;
 using MVR_Casa_Pronta.Interfaces;
 using MVR_Casa_Pronta.Repository;
 using MVR_Casa_Pronta.Service;
-using Unity;
-using static MVR_Casa_Pronta.Service.ImageSeparator;
+//using static MVR_Casa_Pronta.Service.ImageSeparator;
 
 namespace MVR_Casa_Pronta.Controllers
 {
@@ -16,15 +15,12 @@ namespace MVR_Casa_Pronta.Controllers
     {
         private readonly IGaleryCreator _galeryCreator;
 
-        public ProjectsController() 
+        public ProjectsController(IGaleryCreator galeryCreator) 
         {
-            _galeryCreator = new GaleryCreator(new ImageSeparator(new ImagesRepository()));
+            _galeryCreator = galeryCreator;
+            
         }
 
-        //public ProjectsController(IGaleryCreator galeryCreator)
-        //{
-        //    _galeryCreator = galeryCreator;
-        //}
         // GET: Projects
         public ActionResult Index()
         {

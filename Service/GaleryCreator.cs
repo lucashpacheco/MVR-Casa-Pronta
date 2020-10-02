@@ -3,68 +3,58 @@ using MVR_Casa_Pronta.Models;
 using MVR_Casa_Pronta.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
 namespace MVR_Casa_Pronta.Service
 {
-    public class ImageSeparator : IImageSeparator
+    public class GaleryCreator : IGaleryCreator
     {
+
+
         private readonly IImagesRepository _imagesRepository;
 
-        public ImageSeparator(IImagesRepository imagesRepository)
+
+        public GaleryCreator(IImagesRepository imagesRepository)
         {
             _imagesRepository = imagesRepository;
         }
 
-        public List<ImagesModel> ImageSeparatorMethod()
+        public string GaleryCreatorMethod()
         {
             var images = _imagesRepository.GetAllImages();
-            var listImages = new List<ImagesModel>();
 
-            return images;
+            object imageX = "";
+
+            var div = MountDivsPerImage(images);
+
+
+
+            return div;
+            //return div;
         }
 
-        public class GaleryCreator : IGaleryCreator
+        private string MountDivsPerImage(List<ImagesModel> images)
         {
-            private readonly IImageSeparator _imageSeparator;
-
-            public GaleryCreator(IImageSeparator imageSeparator)
+            var imageX = "";
+            var div = $"";
+            foreach (var image in images)
             {
-                _imageSeparator = imageSeparator;
-            }
 
-            public object GaleryCreatorMethod()
-            {
-                var images = _imageSeparator.ImageSeparatorMethod();
+
+                var imageBin = image.IMG_BYTE;
+                var base64 = Convert.ToBase64String(imageBin);
+                var imgSrc = String.Format("data:image/jpg;base64,{0}", base64);
                 
-                object imageX = "";
+                
+                
+                div = $"<div class=\"img\">< a href = \"{imgSrc}\" data - lightbox = \"roadtrip\" >< img src = \"{imgSrc}\" alt = \"Fjords\" /> </ a > < div class=\"desc\">{image.IMG_DESCRIPTION}</div> </div>";
+                //div = $"<div class=\"img\">< a href = \"{image.IMG_BYTE}\" data - lightbox = \"roadtrip\" >< img src = \"{image.IMG_BYTE}\" alt = \"Fjords\" /> </ a > < div class=\"desc\">{image.IMG_DESCRIPTION}</div> </div>";
 
-                //var div = MountDivsPerImage(images);
-
-                foreach (var image in images)
-                {
-                        imageX = image;
-
-                    return imageX;
-                }
-
-                object div = "";
-
-                return images;
+                return div;
             }
 
-            //private object MountDivsPerImage(List<ImagesModel> images)
-            //{
-            //    object imageX = "";
-            //    var div = $"";
-            //    foreach (var image in images)
-            //    {
-            //        imageX = image;
-
-            //        return imageX;
-            //    }
-
-            //    return div;
-            //}
+            return div;
         }
     }
 }

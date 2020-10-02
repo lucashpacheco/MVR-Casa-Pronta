@@ -8,6 +8,6 @@ namespace MVR_Casa_Pronta.Interfaces
 {
     public interface IGaleryCreator
     {
-        object GaleryCreatorMethod();
+        string GaleryCreatorMethod();
     }
 }
