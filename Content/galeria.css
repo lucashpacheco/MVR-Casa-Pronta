@@ -3,6 +3,7 @@ div.img {
     border: 1px solid #ccc;
     float: left;
     width: 300px;
+    height: 300px;
 }
 
 div.img:hover {
@@ -11,7 +12,7 @@ div.img:hover {
 
 div.img img {
     width: 100%;
-    height: auto;
+    height: 80%;
 }
 
 div.desc {

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVR_Casa_Pronta.Interfaces;
+using MVR_Casa_Pronta.Models;
 using MVR_Casa_Pronta.Repository;
 using MVR_Casa_Pronta.Service;
 //using static MVR_Casa_Pronta.Service.ImageSeparator;
@@ -24,8 +25,11 @@ namespace MVR_Casa_Pronta.Controllers
         // GET: Projects
         public ActionResult Index()
         {
-            object divFinal = _galeryCreator.GaleryCreatorMethod();
-            return View();
+            List<ImagesModel> images = _galeryCreator.GaleryCreatorMethod();
+        //    IHtmlString divFinal = _galeryCreator.GaleryCreatorMethod();
+        //    IHtmlString div = divFinal;
+            ViewBag.ListaFinal = images;
+            return View(images);
         }
     }
 }

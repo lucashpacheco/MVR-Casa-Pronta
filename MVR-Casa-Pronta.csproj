@@ -138,6 +138,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IGaleryCreator.cs" />
+    <Compile Include="Models\GaleryViewModel.cs" />
     <Compile Include="Models\Generated\Database.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -150,6 +151,7 @@
     <Compile Include="Repository\AbstractRepository.cs" />
     <Compile Include="Repository\ImagesRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Service\GaleryCreator - Copy.cs" />
     <Compile Include="Service\GaleryCreator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +175,8 @@
     <Content Include="fonts\entypo-selected.eot" />
     <Content Include="fonts\entypo-selected.ttf" />
     <Content Include="fonts\entypo-selected.woff" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\3g.jpg" />
     <Content Include="Models\Generated\Database.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Database.cs</LastGenOutput>
@@ -228,10 +232,10 @@
     <Content Include="Views\Shared\_LayoutGallery.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\View.cshtml" />
+    <Content Include="Views\Projects\Index - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
