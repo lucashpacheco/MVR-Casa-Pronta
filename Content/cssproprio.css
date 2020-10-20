@@ -1,0 +1,38 @@
+﻿body {
+}
+
+.aboutusbox {
+    background-color: lightgrey;
+    padding: 5% 5% 5% 5%;
+    height: 500px;
+}
+.aboutustittlebox {
+    background-image: url('https://scontent.fcgh7-1.fna.fbcdn.net/v/t1.0-9/118070493_655381075083118_9187070162330154764_o.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=yS0qZpTbr9AAX-RJqY3&_nc_ht=scontent.fcgh7-1.fna&oh=93d72284d08db4380b178e41f369c9a0&oe=5F90E579');
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat:no-repeat;
+    padding: 10% 10% 10% 10%;
+    height:400px;
+    
+}
+.servicoimagebox {
+    background-image: url('https://image.freepik.com/fotos-gratis/jovem-arquiteta-trabalhando-sobre-fundo-branco_75922-615.jpg');
+    background-size: 70%;
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding: 10% 2% 10% 10%;
+    height: 400px;
+    font-ba
+}
+
+.textservico{
+    background-color:#ffffff;
+}
+
+.homebanner {
+    background-image: url('https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg');
+    
+}
+

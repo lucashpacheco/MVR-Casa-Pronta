@@ -153,6 +153,7 @@
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Service\GaleryCreator - Copy.cs" />
     <Compile Include="Service\GaleryCreator.cs" />
+    <Compile Include="Service\QueryInsertFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -166,6 +167,7 @@
     <Content Include="Content\fancybox\fancybox_overlay.png" />
     <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
     <Content Include="Content\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\cssproprio.css" />
     <Content Include="Content\galeria.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />

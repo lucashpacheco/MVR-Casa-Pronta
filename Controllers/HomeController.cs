@@ -15,14 +15,14 @@ namespace MVR_Casa_Pronta.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Sobre a MVR Casa Pronta";
+            ViewBag.Message = "Sobre a VMR Casa Pronta";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Entre em contato com a MVR";
+            ViewBag.Message = "Entre em contato com a VMR";
 
             return View();
         }

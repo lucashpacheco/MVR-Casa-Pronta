@@ -27,6 +27,7 @@ namespace MVR_Casa_Pronta
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/galeria.css",
                       "~/Content/bootstrap.css",
+                      "~/Content/cssproprio.css",
                       "~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/lightbox").Include(
                       "~/Content/lightbox.css"));
